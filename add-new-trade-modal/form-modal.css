@@ -1,0 +1,51 @@
+.addNewTradeForm {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    grid-template-areas: "fxcrypto assetName" "position entry" "amount stoploss" "target date" "submit submit";
+}
+
+
+/* Assign grid areas to the elements */
+
+.addNewTradeForm>div:nth-child(1) {
+    grid-area: fxcrypto;
+}
+
+.addNewTradeForm>div:nth-child(2) {
+    grid-area: assetName;
+}
+
+.addNewTradeForm>div:nth-child(3) {
+    grid-area: position;
+}
+
+.addNewTradeForm>div:nth-child(4) {
+    grid-area: entry;
+}
+
+.addNewTradeForm>div:nth-child(5) {
+    grid-area: amount;
+}
+
+.addNewTradeForm>div:nth-child(6) {
+    grid-area: stoploss;
+}
+
+.addNewTradeForm>div:nth-child(7) {
+    grid-area: target;
+}
+
+.addNewTradeForm>div:nth-child(8) {
+    grid-area: date;
+}
+
+
+/* Place the submit button in the submit area */
+
+.submit-button-container {
+    grid-area: submit;
+    display: flex;
+    justify-content: center;
+}

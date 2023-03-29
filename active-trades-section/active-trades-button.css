@@ -1,0 +1,37 @@
+.trade-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.trade-buttons button {
+    flex-grow: 1;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.trade-buttons .more-info-button {
+    background-color: rgb(4 45 231 / 66%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.trade-buttons .delete-button {
+    background-color: rgb(220 36 48 / 78%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.trade-buttons .close-trade-button {
+    background-color: rgb(187 177 20 / 86%);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.trade-buttons button:hover {
+    opacity: 0.9;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}

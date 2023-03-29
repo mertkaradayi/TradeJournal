@@ -1,0 +1,83 @@
+.closedTrades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.closed-trade-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+
+/* For screens larger than 600px */
+
+@media (min-width: 600px) {
+    .closed-trade-group {
+        width: calc(50% - 20px);
+    }
+}
+
+
+/* For screens larger than 900px */
+
+@media (min-width: 900px) {
+    .closed-trade-group {
+        width: calc(33% - 20px);
+    }
+}
+
+
+/* For screens larger than 1200px */
+
+@media (min-width: 1200px) {
+    .closed-trade-group {
+        width: calc(25% - 20px);
+    }
+}
+
+.closed-trade {
+    /* background-color: #ffffff; */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.closed-trade:last-child {
+    margin-bottom: 0;
+}
+
+.closed-trade p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.closed-trade-group[data-trade-id]::before {
+    content: "Trade ID: " attr(data-trade-id);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trade-info-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.trade-info-btn:hover {
+    background-color: #0069d9;
+}

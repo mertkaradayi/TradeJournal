@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="/index.c1b216a8.css">
+    <link rel="stylesheet" href="/index.02d2d5f8.css">
+
+    <!-- Modal -->
+    <link rel="stylesheet" href="/index.7d9863f6.css">
+    <link rel="stylesheet" href="/index.55189d6c.css">
+    <link rel="stylesheet" href="/index.35e977ff.css">
+
+    <!-- HERO -->
+    <link rel="stylesheet" href="/index.aea172b1.css">
+    <link rel="stylesheet" href="/index.890f5e5d.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeJournal</title>
+</head>
+
+<body>
+    <!--   HERO SECTION   -->
+    <div id="hero" class="hero">
+        <div id="journalSection">
+            <h1 id="journal" class="journal">
+                Your Trade Journal
+            </h1>
+        </div>
+
+        <div id="buttonsHero" class="buttonsHero">
+            <button type="button" id="addNewTradeButton" class="addNewTradeButton">
+                Add New Trade
+            </button>
+            <button type="button" id="showGraph" class="showGraph">
+                Show Graph
+            </button>
+        </div>
+    </div>
+
+    <!-- ACTIVE TRADES SECTION -->
+    <div id="activeTrades" class="activeTrades">
+
+    </div>
+
+    <!-- CLOSE TRADES SECTION -->
+    <div id="closedTrades" class="closedTrades">
+
+    </div>
+
+    <!-- Add New Trade Modal -->
+    <div id="addNewTradeModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Add New Trade</span>
+                <span class="close">&times;</span>
+            </div>
+
+
+            <!-- Add form here later -->
+            <form id="addNewTradeForm" class="addNewTradeForm">
+
+                <div>
+                    <!-- FX or Crypto Select in the Form -->
+                    <label for="fxcrypto">FX/Crypto</label>
+                    <select name="fxcrypto" id="fxcryptoSelect" class="fxcryptoSelect">
+            <option value="crypto">Crypto</option>
+            <option value="forex">Forex</option>
+          </select>
+                </div>
+
+                <div>
+                    <!-- Asset Name Input in the Form -->
+                    <label for="assetName" id="assetNameLabel">Asset Name</label>
+                    <input placeholder="BTC" type="text" name="assetName" id="assetNameInput">
+                </div>
+
+                <div>
+                    <!-- Position Select Long or Short in the Form -->
+                    <label for="position">Position</label>
+                    <select name="position" id="position">
+            <option value="short">Short</option>
+            <option value="long">Long</option>
+          </select>
+                </div>
+
+                <div>
+                    <!-- Entry Input in the Form -->
+                    <label for="entry" id="entryLabel">Entry</label>
+                    <input placeholder="5.4 not 5,4" type="text" id="entryInput" name="entry">
+                </div>
+
+                <div>
+                    <!-- Amount in the Form -->
+                    <label for="amount" id="amountLabel">Amount</label>
+                    <input placeholder="0.4 not 0,4" type="text" id="amountInput" name="amount">
+
+                </div>
+
+                <div>
+                    <!-- Stop Loss in the Form -->
+                    <label for="stoploss" id="stoplossLabel">Stop</label>
+                    <input placeholder="16.4 not 16,4" type="text" id="stoplossInput" name="stoploss">
+
+                </div>
+
+                <div>
+                    <!-- Trade Target in the Form -->
+                    <label for="target" id="targetLabel">Target</label>
+                    <input placeholder="13.3 not 13,3" type="text" id="targetInput" name="target">
+
+                </div>
+
+                <div>
+                    <!-- Date in the form -->
+                    <label for="date" id="dateLabel">Date</label>
+                    <input type="datetime-local" name="date" id="dateInput">
+
+                </div>
+
+                <div class="submit-button-container">
+                    <!-- Submit the Form -->
+                    <button type="submit" id="submitButtonForm">
+                      Submit the Trade
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- <script src="add-new-trade-scripts/add-new-trade-modal-popup.js"></script>
+    <script src="add-new-trade-scripts/add-new-trade-to-hero.js"></script> -->
+
+    <script src="/index.3d214d75.js" defer=""></script>
+
+</body>
+
+</html>

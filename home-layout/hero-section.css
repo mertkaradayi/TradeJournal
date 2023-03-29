@@ -1,0 +1,22 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
+    height: 30vh;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 0 20px;
+}
+
+#journalSection {
+    margin-bottom: 20px;
+}
+
+.journal {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}

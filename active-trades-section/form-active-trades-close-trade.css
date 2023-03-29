@@ -1,0 +1,47 @@
+.close-trade-form-container {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(11px);
+}
+
+.close-trade-form {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.close-trade-form input {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 6px 12px;
+    color: #333;
+    font-size: 16px;
+    outline: none;
+}
+
+.close-trade-form input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.close-trade-form button {
+    font-weight: 400px;
+    background-color: #909090;
+    border: 1px solid rgb(186 171 171 / 40%);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.close-trade-form button:hover {
+    background-color: #8d8c87;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+}

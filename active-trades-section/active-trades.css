@@ -1,0 +1,48 @@
+.activeTrades,
+.closedTrades {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.trade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #2d2d2d;
+}
+
+.trade:last-child {
+    margin-bottom: 0;
+}
+
+.trade-info {
+    flex-grow: 1;
+}
+
+.trade-info p {
+    font-size: 18px;
+    margin: 0 0 10px;
+    padding-bottom: 10px;
+}
+
+.trade-info p:last-child {
+    margin-bottom: 0;
+}
+
+.activeTrades h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}

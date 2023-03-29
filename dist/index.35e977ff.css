@@ -1,0 +1,29 @@
+button[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.submit-button-container {
+  grid-area: 5 / 1 / auto / span 2;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/*# sourceMappingURL=index.35e977ff.css.map */

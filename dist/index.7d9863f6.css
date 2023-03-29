@@ -1,0 +1,28 @@
+.addNewTradeForm {
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  display: grid;
+}
+
+.addNewTradeForm > div:nth-child(1), .addNewTradeForm > div:nth-child(2) {
+  grid-row: 1;
+}
+
+.addNewTradeForm > div:nth-child(3), .addNewTradeForm > div:nth-child(4) {
+  grid-row: 2;
+}
+
+.addNewTradeForm > div:nth-child(5), .addNewTradeForm > div:nth-child(6) {
+  grid-row: 3;
+}
+
+.addNewTradeForm > div:nth-child(7), .addNewTradeForm > div:nth-child(8) {
+  grid-row: 4;
+}
+
+#dateInput {
+  grid-area: 5 / 1 / auto / span 2;
+}
+
+/*# sourceMappingURL=index.7d9863f6.css.map */

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.journal {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.buttonsHero {
+  gap: 12px;
+  display: flex;
+}
+
+.addNewTradeButton, .showGraph {
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addNewTradeButton:hover, .showGraph:hover {
+  background-color: #45a049;
+}
+
+/*# sourceMappingURL=index.aea172b1.css.map */

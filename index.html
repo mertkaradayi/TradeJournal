@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- <link rel="stylesheet" href="active-trades-section.css"> -->
+    <link rel="stylesheet" href="closed-trades-section.css">
+
+    <!-- Modal -->
+    <link rel="stylesheet" href="add-new-trade-modal/form-modal.css">
+    <link rel="stylesheet" href="add-new-trade-modal/modal-style.css">
+    <link rel="stylesheet" href="add-new-trade-modal/submit-button.css">
+
+
+    <!-- HOME LAYOUT -->
+    <link rel="stylesheet" href="home-layout/general-style.css">
+    <!-- HERO SECTION -->
+    <link rel="stylesheet" href="home-layout/hero-section.css">
+    <link rel="stylesheet" href="home-layout/hero-buttons.css">
+
+    <!-- ACTIVE TRADES -->
+    <link rel="stylesheet" href="active-trades-section/active-trades.css">
+    <link rel="stylesheet" href="active-trades-section/active-trades-button.css">
+    <link rel="stylesheet" href="active-trades-section/form-active-trades-close-trade.css">
+    <!-- MoreInfoModal -->
+    <link rel="stylesheet" href="active-trades-section/more-info-modal.css">
+
+    <!-- CLOSE TRADES -->
+    <link rel="stylesheet" href="close-trade/close-trade-style/close-trade-style.css">
+    <!-- TRADE INFO MODAL in CLOSE TRADES  -->
+    <link rel="stylesheet" href="close-trade/close-trade-style/trade-info-modal.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeJournal</title>
+</head>
+
+<body>
+    <!--   HERO SECTION   -->
+    <div id="hero" class="hero">
+        <div id="journalSection">
+            <h1 id="journal" class="journal">
+                Your Trade Journal
+            </h1>
+        </div>
+
+        <div id="buttonsHero" class="buttonsHero">
+            <button type="button" id="addNewTradeButton" class="addNewTradeButton">
+                Add New Trade
+            </button>
+            <button type="button" id="showGraph" class="showGraph">
+                Show Graph
+            </button>
+        </div>
+    </div>
+
+    <!-- ACTIVE TRADES SECTION -->
+    <div id="activeTrades" class="activeTrades">
+        <h3>Active Trades: <span id="activeTradesCounter"></span></h3>
+
+
+    </div>
+
+    <!-- CLOSE TRADES SECTION -->
+    <div id="closedTrades" class="closedTrades">
+
+
+    </div>
+
+
+
+
+    <!-- Add New Trade Modal -->
+    <div id="addNewTradeModal" class="modal">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Add New Trade</span>
+                <span class="close">&times;</span>
+            </div>
+
+
+            <!-- Add form here later -->
+            <form id="addNewTradeForm" class="addNewTradeForm">
+
+                <div class="user-box">
+                    <!-- FX or Crypto Select in the Form -->
+                    <label for="fxcrypto">FX/Crypto</label>
+                    <select name="fxcrypto" id="fxcryptoSelect" class="fxcryptoSelect">
+            <option value="crypto">Crypto</option>
+            <option value="forex">Forex</option>
+          </select>
+                </div>
+
+                <div class="user-box">
+                    <!-- Asset Name Input in the Form -->
+                    <label for="assetName" id="assetNameLabel">Asset Name</label>
+                    <input placeholder="BTC" type="text" name="assetName" id="assetNameInput" required>
+                </div>
+
+                <div class="user-box">
+                    <!-- Position Select Long or Short in the Form -->
+                    <label for="position">Position</label>
+                    <select name="position" id="position">
+            <option value="Short">Short</option>
+            <option value="Long">Long</option>
+          </select>
+                </div>
+
+                <div class="user-box">
+                    <!-- Entry Input in the Form -->
+                    <label for="entry" id="entryLabel">Entry</label>
+                    <input placeholder="5.4 not 5,4" type="text" id="entryInput" name="entry" required>
+                </div>
+
+                <div class="user-box">
+                    <!-- Amount in the Form -->
+                    <label for="amount" id="amountLabel">Amount</label>
+                    <input placeholder="0.4 not 0,4" type="text" id="amountInput" name="amount" required>
+
+                </div>
+
+                <div class="user-box">
+                    <!-- Stop Loss in the Form -->
+                    <label for="stoploss" id="stoplossLabel">Stop</label>
+                    <input placeholder="16.4 not 16,4" type="text" id="stoplossInput" name="stoploss" required>
+
+                </div>
+
+                <div class="user-box">
+                    <!-- Trade Target in the Form -->
+                    <label for="target" id="targetLabel">Target</label>
+                    <input placeholder="13.3 not 13,3" type="text" id="targetInput" name="target" required>
+
+                </div>
+
+                <div class="user-box">
+                    <!-- Date in the form -->
+                    <label for="date" id="dateLabel">Date</label>
+                    <input type="datetime-local" name="date" id="dateInput" required>
+
+                </div>
+
+                <div class="submit-button-container">
+                    <!-- Submit the Form -->
+                    <button type="submit" id="submitButtonForm" class="custom-submit-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                        Submit the Trade
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- More Info Modal -->
+    <div class="modal-container">
+        <div id="moreInfoModal" class="more-info-modal">
+            <div class="more-info-modal-content">
+                <div class="more-info-modal-header">
+                    <span class="more-info-modal-title">Trade Details</span>
+                    <span class="close-more-info">&times;</span>
+                </div>
+                <div class="more-info-modal-body">
+                    <!-- Trade details will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Trade info modal -->
+    <div class="trade-info-modal">
+        <div class="trade-info-modal-content">
+            <span id="modal-close-btn" class="close">&times;</span>
+            <div class="trade-info-details"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <script src="add-new-trade-scripts/add-new-trade-modal-popup.js"></script>
+    <script src="add-new-trade-scripts/add-new-trade-to-hero.js"></script> -->
+
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+</html>

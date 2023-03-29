@@ -1,0 +1,54 @@
+.trade-info-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.trade-info-modal-content {
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    max-width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    backdrop-filter: blur(11px);
+}
+
+.trade-info-details {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.trade-info-details p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 8px;
+}
+
+.trade-info-details p:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.close {
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.close:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
